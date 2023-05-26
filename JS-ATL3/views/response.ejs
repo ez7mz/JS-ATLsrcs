@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+                    <div class="flex">
+                        <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                        <div>
+                            <p class="font-bold">Success</p>
+                            <p class="text-sm">Thank you sir,
+                                <%= name %>
+                                    (
+                                    <%= email %>)</p>
+                            <p class="text-sm">Information sent Successfully, Enjoy your staying KING 👑!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <h1>Merci d'avoir soumis le formulaire
+        <%= name %>
+            <%= email %>.</h1> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            "50": "#eff6ff",
+                            "100": "#dbeafe",
+                            "200": "#bfdbfe",
+                            "300": "#93c5fd",
+                            "400": "#60a5fa",
+                            "500": "#3b82f6",
+                            "600": "#2563eb",
+                            "700": "#1d4ed8",
+                            "800": "#1e40af",
+                            "900": "#1e3a8a"
+                        }
+                    }
+                },
+                fontFamily: {
+                    'body': [
+                        'Inter',
+                        'ui-sans-serif',
+                        'system-ui',
+                        '-apple-system',
+                        'system-ui',
+                        'Segoe UI',
+                        'Roboto',
+                        'Helvetica Neue',
+                        'Arial',
+                        'Noto Sans',
+                        'sans-serif',
+                        'Apple Color Emoji',
+                        'Segoe UI Emoji',
+                        'Segoe UI Symbol',
+                        'Noto Color Emoji'
+                    ],
+                    'sans': [
+                        'Inter',
+                        'ui-sans-serif',
+                        'system-ui',
+                        '-apple-system',
+                        'system-ui',
+                        'Segoe UI',
+                        'Roboto',
+                        'Helvetica Neue',
+                        'Arial',
+                        'Noto Sans',
+                        'sans-serif',
+                        'Apple Color Emoji',
+                        'Segoe UI Emoji',
+                        'Segoe UI Symbol',
+                        'Noto Color Emoji'
+                    ]
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

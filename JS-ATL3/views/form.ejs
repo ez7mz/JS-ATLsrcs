@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire de contact</title>
+</head>
+
+<body>
+    <h1>Formulaire de contact</h1>
+    <form method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-ATL2</title>
+    <link rel="shortcut icon" href="./logo-light.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="bg-gray-50 dark:bg-gray-900">
+
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                <img class="h-8 mr-2" src="http://ensakh-iid.ma/img/logo-dark.png" alt="logo"> ATL2 JS
+            </a>
+            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                        Sign in to your account
+                    </h1>
+                    <form class="space-y-4 md:space-y-6" method="post">
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="text" id="name" name="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Full name</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                        </div>
+                        <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            "50": "#eff6ff",
+                            "100": "#dbeafe",
+                            "200": "#bfdbfe",
+                            "300": "#93c5fd",
+                            "400": "#60a5fa",
+                            "500": "#3b82f6",
+                            "600": "#2563eb",
+                            "700": "#1d4ed8",
+                            "800": "#1e40af",
+                            "900": "#1e3a8a"
+                        }
+                    }
+                },
+                fontFamily: {
+                    'body': [
+                        'Inter',
+                        'ui-sans-serif',
+                        'system-ui',
+                        '-apple-system',
+                        'system-ui',
+                        'Segoe UI',
+                        'Roboto',
+                        'Helvetica Neue',
+                        'Arial',
+                        'Noto Sans',
+                        'sans-serif',
+                        'Apple Color Emoji',
+                        'Segoe UI Emoji',
+                        'Segoe UI Symbol',
+                        'Noto Color Emoji'
+                    ],
+                    'sans': [
+                        'Inter',
+                        'ui-sans-serif',
+                        'system-ui',
+                        '-apple-system',
+                        'system-ui',
+                        'Segoe UI',
+                        'Roboto',
+                        'Helvetica Neue',
+                        'Arial',
+                        'Noto Sans',
+                        'sans-serif',
+                        'Apple Color Emoji',
+                        'Segoe UI Emoji',
+                        'Segoe UI Symbol',
+                        'Noto Color Emoji'
+                    ]
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
